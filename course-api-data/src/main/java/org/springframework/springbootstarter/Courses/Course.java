@@ -6,8 +6,6 @@ import javax.persistence.ManyToOne;
 
 import org.springframework.springbootstarter.topic.Topic;
 
-
-
 @Entity
 public class Course {
 	
@@ -24,7 +22,11 @@ public class Course {
 		
 	}
 	
-	public Course(String id, String name, String description,String topicId) {
+	public Course(String id,
+	String name,
+	String description,
+	String topicId) {
+		
 		super();
 		this.id = id;
 		this.name = name;
@@ -59,8 +61,5 @@ public class Course {
 	public void setTopic(Topic topic) {
 		this.topic = topic;
 	}
-	
-	
-	
 	
 }
